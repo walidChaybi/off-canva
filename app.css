@@ -1,0 +1,83 @@
+:root {
+    --main-color: rgb(13, 172, 145);
+}
+
+html {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(26, 26, 26);
+}
+
+body {
+    background-color: var(--main-color);
+    position: relative;
+        overflow: hidden;
+
+}
+
+button {
+    background-color: aquamarine;
+    border: .1rem solid rgb(14, 146, 146) ;
+    padding: 1rem 1.61rem;
+}
+button:hover,
+button:focus {
+    background-color: var(--main-color);
+    color: white;
+    border: .1rem solid white;
+}
+.canva {
+    padding: 4rem;
+    width: 100%;
+    transition: transform 0.61s ease;
+    overflow: hidden;
+
+
+}
+
+.off-canva.active,
+.canva.active
+ {
+    transform: translateX(14rem);
+}
+
+.off-canva {
+    padding-top: 2rem;
+    background-color: rgb(50, 50, 187);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 14rem;
+    height: 100vh;
+    top: 0;
+    left: -14rem;
+    transition: transform 0.61s ease;
+        overflow: hidden;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+li {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 4rem;
+    background-color: rgba(137, 43, 226, 0.445);
+}
+
+li:hover {
+    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 4rem;
+    background-color: rgba(164, 97, 226, 0.445);
+    cursor: pointer;
+}
